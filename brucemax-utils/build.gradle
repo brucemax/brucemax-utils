@@ -51,8 +51,8 @@ afterEvaluate {
 
                 // You can then customize attributes of the publication as shown below.
                 groupId = 'com.github.brucemax'
-                artifactId = 'brucemax-utils '
-                version = '1.0'
+                artifactId = 'brucemax-utils'
+                version = '1.1'
             }
         }
     }
