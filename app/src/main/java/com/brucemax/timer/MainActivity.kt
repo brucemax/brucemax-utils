@@ -159,7 +159,7 @@ fun Greeting(name: String) {
     Timer(modifier = Modifier.size(200.dp),  totalTime = 100000)
 }
 
-@Preview(showBackground = true, widthDp = 450, heightDp = 750)
+@Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
     TimerTheme {

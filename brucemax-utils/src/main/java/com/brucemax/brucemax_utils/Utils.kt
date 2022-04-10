@@ -11,10 +11,6 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 
-fun myLog(text: String) {
-    if (BuildConfig.DEBUG) Log.d("myTag", text)
-}
-
 fun Context.showToast(text: String, duration: Int = Toast.LENGTH_SHORT) {
     Toast.makeText(this, text, duration).show()
 }
