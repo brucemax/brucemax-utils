@@ -20,8 +20,8 @@ object LocaleHelper {
     }
 
     fun getPersistedLocale(context: Context?): String {
-        val preferences = PreferenceManager.getDefaultSharedPreferences(context)
-        return preferences.getString(PRF_LANGUAGE, "system") ?: "system"
+        val preferences = context?.let { PreferenceManager.getDefaultSharedPreferences(it) }
+        return preferences?.getString(PRF_LANGUAGE, "system") ?: "system"
     }
 
     /**

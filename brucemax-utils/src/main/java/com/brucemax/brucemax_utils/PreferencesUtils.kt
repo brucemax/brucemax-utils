@@ -9,7 +9,7 @@ inline fun Fragment.editPrefs(
         commit: Boolean = false,
         action: SharedPreferences.Editor.() -> Unit
 ) {
-    val preferences = PreferenceManager.getDefaultSharedPreferences(context)
+    val preferences = PreferenceManager.getDefaultSharedPreferences(requireContext())
     val editor = preferences.edit()
     action(editor)
     if (commit) {
@@ -34,7 +34,7 @@ inline fun Context.editPrefs(
 }
 
 fun <T> Fragment.fromPrefs(action: SharedPreferences.() -> T) : T {
-    val preferences = PreferenceManager.getDefaultSharedPreferences(context)
+    val preferences = PreferenceManager.getDefaultSharedPreferences(requireContext())
     return action(preferences)
 }
 

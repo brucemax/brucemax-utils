@@ -28,7 +28,6 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.brucemax.brucemax_utils.myLog
 import com.brucemax.brucemax_utils.showToast
 import com.brucemax.timer.ui.theme.TimerTheme
 import kotlinx.coroutines.delay
@@ -141,7 +140,7 @@ fun Timer(
                     isTimerRunning = !isTimerRunning
                 }
                 context.showToast("Tap!")
-                myLog("Tap!")
+//                myLog("Tap!")
             }, modifier = Modifier.align(Alignment.BottomCenter)
         ) {
             Text(
